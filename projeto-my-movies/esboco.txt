@@ -1,0 +1,34 @@
+Films
+    has_one Director
+    has_many actors
+
+    :title
+    :description
+
+viewed_films
+    has_one user
+    has_one film
+
+Directors
+    has_many films
+
+
+Actors
+    has_many films
+
+
+User
+    has_many Films
+    has_many Classification
+
+Classification
+    has_one Users
+    has_one Film
+
+Filme
+Diretor
+Ator
+Usuário
+FilmesAssistidos
+Genero
+Um filme tem 1 diretor e varios atores
