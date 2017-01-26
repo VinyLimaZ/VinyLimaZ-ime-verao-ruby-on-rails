@@ -6,6 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Actor.create!(name: 'Will Smith', gender: 'male', birthday: Time.now - rand(1000).months)
+Actor.create!(name: 'Angelina Joile', gender: 'female', birthday: Time.now - rand(1000).months)
+Actor.create!(name: 'Margot Robbie', gender: 'female', birthday: Time.now - rand(1000).months)
+
+Director.create!(name: 'Quentin Tarantino', gender: 'male', birthday: Time.now - rand(1000).months)
+Director.create!(name: 'Mel Gibson', gender: 'male', birthday: Time.now - rand(1000).months)
+
+
+
 movies = [
           {title: 'Alladin', release_date: '25-Nov-1992'},
           {title: 'When Harry Met Sally', release_date: '21-Jul-1989' },

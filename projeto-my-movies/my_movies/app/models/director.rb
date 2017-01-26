@@ -1,0 +1,3 @@
+class Director < Professional
+
+end
