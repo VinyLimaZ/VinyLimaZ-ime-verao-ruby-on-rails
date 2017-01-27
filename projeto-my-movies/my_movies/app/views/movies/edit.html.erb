@@ -1,5 +1,3 @@
-<h1 class="title">
-  Edit movie <%= @movie.title %>
-</h1>
+<h1 class="title">Edit movie <%= @movie.title %></h1>
 
-<%= render partial: 'form', method: :put, action: :update %>
+<%= render partial: 'form', locals: { method: :put, action: :update } %>
